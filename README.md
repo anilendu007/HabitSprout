@@ -80,16 +80,23 @@ Traditional self-reported habit-tracking applications suffer from an **80% aband
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/riya-tiwari/HabitSprout.git](https://github.com/riya-tiwari/HabitSprout.git)
+   git clone [https://github.com/anilendu007/HabitSprout.git](https://github.com/anilendu007/HabitSprout.git)
    cd HabitSprout
+   ```
  1. Install dependencies:
+    ```bash
     npm install
- 2. Configure environment variables:
+    ```
+ 3. Configure environment variables:
     Create a .env file in the root directory:
+    ```bash
     VITE_PAYPAL_CLIENT_ID=your_paypal_sandbox_client_id
     VITE_SPROUT_AI_KEY=your_ai_agent_key
- 3. Run the development server:
+    ```
+ 5. Run the development server:
+    ```bash
     npm run dev
+    ```
  Open http://localhost:5173 to view the app locally.
 
 ---
