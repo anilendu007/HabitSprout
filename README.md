@@ -31,7 +31,9 @@ Traditional self-reported habit-tracking applications suffer from an **80% aband
        │
        ▼
 [ AG Grid Reactive Ledger ] ──► Status: DISBURSED (Real-time update)
+
 ```
+
 ---
 
 ## ✨ 3. Key Features & Modules
