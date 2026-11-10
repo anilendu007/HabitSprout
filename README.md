@@ -80,7 +80,7 @@ Traditional self-reported habit-tracking applications suffer from an **80% aband
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/anilendu007/HabitSprout.git](https://github.com/anilendu007/HabitSprout.git)
+   git clone https://github.com/anilendu007/HabitSprout.git
    cd HabitSprout
    ```
  1. Install dependencies:
