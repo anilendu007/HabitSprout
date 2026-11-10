@@ -1,15 +1,24 @@
-🌿 HabitSprout — Agentic Behavioral Escrow Protocol
-Explore Live Demo · Watch 3-Min Video · API Documentation
+<div align="center">
 
-🚀 1. Abstract & Problem Statement
-The Problem
-Traditional self-reported habit-tracking applications suffer from an 80% abandonment rate within the first two weeks. Without meaningful stakes, psychological loss aversion is absent, causing users to easily skip daily personal and professional milestones.
+# 🌿 HabitSprout — Agentic Behavioral Escrow Protocol
 
-The Solution: HabitSprout
-HabitSprout is an autonomous Agentic Behavioral Escrow Protocol that bridges financial accountability with generative AI. Users lock monetary wagers behind daily personal goals via secure PayPal escrow. Instead of relying on trust, Sprout AI visually audits user-submitted evidence (notes, workspace captures, flashcards). Upon successful verification, HabitSprout triggers PayPal REST API endpoints to instantly return funds or redistribute unverified wagers into community reward pools.
+</div>
 
-📐 2. System Architecture & Workflow
+---
 
+## 🚀 1. Abstract & Problem Statement
+
+### The Problem
+Traditional self-reported habit-tracking applications suffer from an **80% abandonment rate within the first two weeks**. Without meaningful stakes, psychological loss aversion is absent, causing users to easily skip daily personal and professional milestones.
+
+### The Solution: HabitSprout
+**HabitSprout** is an autonomous **Agentic Behavioral Escrow Protocol** that bridges financial accountability with generative AI. Users lock monetary wagers behind daily personal goals via secure PayPal escrow. Instead of relying on trust, **Sprout AI** visually audits user-submitted evidence (notes, workspace captures, flashcards). Upon successful verification, HabitSprout triggers PayPal REST API endpoints to instantly return funds or redistribute unverified wagers into community reward pools.
+
+---
+
+## 📐 2. System Architecture & Workflow
+
+```text
 [ User Habit Setup ] 
        │
        ▼
@@ -23,77 +32,84 @@ HabitSprout is an autonomous Agentic Behavioral Escrow Protocol that bridges fin
        ▼
 [ AG Grid Reactive Ledger ] ──► Status: DISBURSED (Real-time update)
 
-✨ 3. Key Features & Modules
-Embedded PayPal Escrow Checkout
+---
 
-Simulated escrow creation powered by PayPal REST APIs and JavaScript SDK sandbox environment.
+## ✨ 3. Key Features & Modules
 
-Wagers enter a strict PENDING state to signify locked collateral before proof validation.
+* **Embedded PayPal Escrow Checkout**
+  * Simulated escrow creation powered by PayPal REST APIs and JavaScript SDK sandbox environment.
+  * Wagers enter a strict `PENDING` state to signify locked collateral before proof validation.
 
-Sprout AI Verification Chamber
+* **Sprout AI Verification Chamber**
+  * Multimodal AI pipeline that extracts handwritten text via OCR, cross-references signatures, and evaluates timeline metrics.
+  * Features rigorous error-handling and automated rejection workflows for negative test cases.
 
-Multimodal AI pipeline that extracts handwritten text via OCR, cross-references signatures, and evaluates timeline metrics.
+* **Reactive AG Grid Ledgers**
+  * Advanced financial ledger built using AG Grid Community Edition.
+  * Employs real-time row transactions (`applyTransaction`) to smoothly animate status shifts from `PENDING` to `DISBURSED`.
 
-Features rigorous error-handling and automated rejection workflows for negative test cases.
+* **APIMatic Code Portal & SDKs**
+  * Auto-generated OpenAPI 3.1 specification.
+  * Typed, multi-language SDK code snippets (Node.js, Python, cURL) for developer integration.
 
-Reactive AG Grid Ledgers
+* **Global Community Reward Pools**
+  * Decentralized economic loops (Momentum Pool, Focus Pool, Kindness Pool) that pool forfeited wagers to reward consistent streak-keepers.
 
-Advanced financial ledger built using AG Grid Community Edition.
+---
 
-Employs real-time row transactions (applyTransaction) to smoothly animate status shifts from PENDING to DISBURSED.
+## 🛠️ 4. Technology Stack
 
-APIMatic Code Portal & SDKs
+* **Frontend UI:** React, Vite, Tailwind CSS, Lucide Icons
+* **Data Grid Engine:** AG Grid React Community Edition
+* **Payments & Escrow:** PayPal REST API, JavaScript SDK (Sandbox Mode)
+* **AI Engine:** Sprout AI Multimodal Vision & OCR Framework
+* **Developer Tooling:** APIMatic Context Plugins (OpenAPI 3.1)
+* **Hosting & Edge:** Render Platform
 
-Auto-generated OpenAPI 3.1 specification.
+---
 
-Typed, multi-language SDK code snippets (Node.js, Python, cURL) for developer integration.
+## 🚀 5. Quick Start & Local Setup
 
-Global Community Reward Pools
+### Prerequisites
+* Node.js (v18.0.0 or higher)
+* npm or yarn package manager
 
-Decentralized economic loops (Momentum Pool, Focus Pool, Kindness Pool) that pool forfeited wagers to reward consistent streak-keepers.
+### Installation Steps
 
-🛠️ 4. Technology Stack
-Frontend UI: React, Vite, Tailwind CSS, Lucide Icons
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/riya-tiwari/HabitSprout.git](https://github.com/riya-tiwari/HabitSprout.git)
+   cd HabitSprout
+ 1. Install dependencies:
+    npm install
+ 2. Configure environment variables:
+    Create a .env file in the root directory:
+    VITE_PAYPAL_CLIENT_ID=your_paypal_sandbox_client_id
+    VITE_SPROUT_AI_KEY=your_ai_agent_key
+ 3. Run the development server:
+    npm run dev
+ Open http://localhost:5173 to view the app locally.
 
-Data Grid Engine: AG Grid React Community Edition
+---
 
-Payments & Escrow: PayPal REST API, JavaScript SDK (Sandbox Mode)
+## 🎬 6. Submission Artifacts
 
-AI Engine: Sprout AI Multimodal Vision & OCR Framework
+* **3-Minute Video Demo:** [Watch on YouTube](https://youtube.com/...)
+* **Live Hosted Application:** [View on Render](https://shaggy-sprout-habit-grow.base44.app/)
+* **Devpost Project Page:** [View Submission](https://devpost.com/...)
 
-Developer Tooling: APIMatic Context Plugins (OpenAPI 3.1)
+---
 
-Hosting & Edge: Render Platform
+## 👥 7. Team & Contributors
 
-🚀 5. Quick Start & Local Setup
-Prerequisites
-Node.js (v18.0.0 or higher)
+* **Riya Tiwari** — *First-Year B.Tech ECE, IGDTUW* (Lead Architect & Full-Stack Developer)
 
-npm or yarn package manager
+---
 
-Installation Steps
-1.  Clone the repository:
-git clone https://github.com/riya-tiwari/HabitSprout.git
-cd HabitSprout
-2.  Install dependencies:
-npm install
-3.  Configure environment variables:
-Create a .env file in the root directory:
-VITE_PAYPAL_CLIENT_ID=your_paypal_sandbox_client_id
-VITE_SPROUT_AI_KEY=your_ai_agent_key
-4.  Run the development server:
-npm run dev
-Open http://localhost:5173 to view the app locally.
+## 📄 8. License
 
-🎬 6. Submission Artifacts
-3-Minute Video Demo: [suspicious link removed]
+This project is licensed under the terms of the [MIT License](LICENSE).
 
-Live Hosted Application: https://shaggy-sprout-habit-grow.base44.app/
 
-Devpost Project Page: [suspicious link removed]
 
-👥 7. Team & Contributors
-Riya Tiwari — First-Year B.Tech ECE, IGDTUW (Lead Architect & Full-Stack Developer)
 
-📄 8. License
-This project is licensed under the terms of the MIT License.
