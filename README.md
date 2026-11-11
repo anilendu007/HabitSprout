@@ -66,7 +66,6 @@ Traditional self-reported habit-tracking applications suffer from an **80% aband
 * **Payments & Escrow:** PayPal REST API, JavaScript SDK (Sandbox Mode)
 * **AI Engine:** Sprout AI Multimodal Vision & OCR Framework
 * **Developer Tooling:** APIMatic Context Plugins (OpenAPI 3.1)
-* **Hosting & Edge:** Render Platform
 
 ---
 
